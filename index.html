@@ -1,7 +1,15 @@
 
    <html lang="en">
 
+
+
    <head>
+      <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Rock+Salt&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Rock+Salt&family=Salsa&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Nanum+Pen+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rock+Salt&family=Salsa&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Pen+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rock+Salt&family=Salsa&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Pen+Script&family=Rock+Salt&family=Salsa&display=swap" rel="stylesheet">
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <link rel="stylesheet" type="text/css" href="styles.css">
        <title>Why is my pizza $34?</title>
@@ -9,21 +17,29 @@
 
    <body>
 
+    <main class="colorBackground">
+
     <div class="container">
+    <!-- <section class="coverpage"> -->
+      <img class="pizzaslice" src="pizza-slice.svg">
         <h1>
-            Why is my pizza $34?
+            Why is my pizza 
         </h1>
-        <h2 class="subhead">New York City’s iconic dish keeps rising in price. What's driving that increase?
-        </h2>
-        <h5 class="byline">By Diana Escamilla Fuentes and Zachary Zawila</h5>
-        <h5>May 19, 2024</h5>
+        <h2 class="price">$34?</h2>
+        <h3 class="lede">New York City’s iconic dish keeps rising in price. What's driving that increase?</h3>
     </div>
         <figure class="top-photo">
-            <img class="main_img" src="pizza.JPG">
+            <img class="main_img" src="IMG_4432.JPG">
         </figure>
         <div class="container">
-            <figcaption class="head-photo">Di Fara Pizza in Midwood, Brooklyn has been making slices the same way for nearly six decades. 
-                <span class="credit">Credit: Zachary Zawila</span></figcaption>
+            <!-- <figcaption class="head-photo">Di Fara Pizza in Midwood, Brooklyn has been making slices the same way for nearly six decades.  -->
+                <!-- <span class="credit">Picture by Zachary Zawila</span></figcaption> -->
+        <h5 class="byline">By Diana Escamilla Fuentes and Zachary Zawila</h5>
+        <h5 class="date">May 19, 2024</h5>
+      <!-- </section>    -->
+
+    </main>
+            </div>
         <p class="intro">
 
           People from all over the world flock to New York City to try the famous pizza. But New York City's pizza keeps getting more expensive. Why is that? Choose your borough and type in how much you paid for a large one-topping pizza below to find out more.
@@ -36,7 +52,7 @@
 
         
         <form id="pizzaForm" onsubmit="calculateCost(event)">
-          <label for="borough">Select a Borough:</label>
+          <label class="borough" for="borough">Select a Borough:</label>
           <select id="borough" required>
             <option value="">Select Borough</option>
             <option value="Manhattan">Manhattan</option>
@@ -46,10 +62,10 @@
             <option value="Staten Island">Staten Island</option>
           </select><br><br>
           
-          <label for="pizzaCost">Enter Pizza Cost ($1 - $100):</label>
+          <label class= "pizzaCost" for="pizzaCost">Enter Pizza Cost ($1 - $100):</label>
           <input type="number" id="pizzaCost" min="1" max="100" step="0.01" required><br><br>
           
-          <button type="submit">Submit</button>
+          <button class="submitButton" type="submit">Submit</button>
         </form>
         
         <div id="result">
@@ -94,9 +110,9 @@
             
             <div class="borough_info" id="brooklyn_info">
             
-            <h2>Brooklyn</h2>
+            <h2 class="borough">Brooklyn</h2>
             
-            <h3>What goes into the price?</h3>
+            <h3 class="text">What goes into the price?</h3>
             
             <h4>Ingredients</h4>
             
