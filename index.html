@@ -17,7 +17,7 @@
 
    <body>
 
-    <main class="colorBackground">
+    <div class="colorBackground">
 
     <div class="container">
     <!-- <section class="coverpage"> -->
@@ -38,23 +38,23 @@
         <h5 class="date">May 19, 2024</h5>
       <!-- </section>    -->
 
-    </main>
+            </div>
             </div>
         <p class="intro">
 
-          People from all over the world flock to New York City to try the famous pizza. But New York City's pizza keeps getting more expensive. Why is that? Choose your borough and type in how much you paid for a large one-topping pizza below to find out more.
+          People from all over the world flock to New York City to try the famous pizza. But New York City's pizza keeps getting more expensive. Why is that? 
 
         </p>
     </div>
     
     <div class="pagecontainer">
 
-
-        
+    <div class="box">
+        <p class="text">Choose your borough and type in how much you paid for a large one-topping pizza below to find out more.</p>
         <form id="pizzaForm" onsubmit="calculateCost(event)">
           <label class="borough" for="borough">Select a Borough:</label>
           <select id="borough" required>
-            <option value="">Select Borough</option>
+            <option class="options" value="">Select Borough</option>
             <option value="Manhattan">Manhattan</option>
             <option value="Brooklyn">Brooklyn</option>
             <option value="Queens">Queens</option>
@@ -67,7 +67,10 @@
           
           <button class="submitButton" type="submit">Submit</button>
         </form>
+        <img class="pizzaicon" src="pizza.svg">
         
+      </div>
+
         <div id="result">
 
           <div class="borough_info" id="bronx_info">
@@ -76,43 +79,54 @@
             
             <h3>What goes into the price?</h3>
             
+    
             <h4>Ingredients</h4>
             
             <p>You can’t make a pizza without the raw materials. Flour or prepared dough, tomatoes or prepared sauce, cheese, and toppings each cost the pizzeria. Many pizzerias order from distributors like Sysco, US Foods, ACE Endico, or Ferraro Foods, and those will also charge a pizzeria for delivery, a cost called freight. Others will purchase their own ingredients at warehouse stores like Jetro or Restaurant Depot, which typically offer lower prices than distributors.</p>
+            
+
             
             <h4>Rent</h4>
             
             <p>Most pizzerias in New York City don’t own their own buildings. The average retail rent in the Bronx is <a href=”https://www.loopnet.com/search/retail-space/bronx-ny/for-lease/7/”>$51.47</a> per square foot per month, and an average pizzeria is around 500-1000 square feet.</p>
             
+
+            
             <h4>Payroll</h4>
             
             <p>Pizzerias, on average, <a href=”https://www.ibisworld.com/industry-statistics/employment/pizza-restaurants-united-states/”>employ about six people</a>. In the past, pizzerias were frequently family affairs, with multiple family members working in the shop, but these days, many rely on outside employees.</p>
+           
+
             
             <h4>Fees</h4>
             
             <p>There are other fees to doing business, too, such as credit card fees and fees for apps like DoorDash and GrubHub. Those apps typically take about 30% of the restaurant’s revenue on each order.</p>
             
+
+            
             <h4>Utilities & Fuel</h4>
             
             <p>Gas, electric, heating and air conditioning are big deals to pizzerias, too. Electric ovens are <a href=”https://www.nytimes.com/2024/04/30/dining/new-york-pizza-electric-ovens.html”>more efficient than older types</a>, but the classic New York Slice comes from a gas oven. And in addition to buying coal or wood for an oven, New York City <a href=”https://www.fox5ny.com/news/nyc-sets-deadline-for-pizzerias-to-cut-down-pollutants”>recently mandated</a> that pizzerias with those ovens take steps to mitigate their pollution.</p>
+            
+
             
             <h4>Marketing</h4>
             
             <p>Don’t forget spreading the word to customers. Printing menus, running social media pages, and any other advertising all costs money, too—plus paying an employee to handle marketing.</p>
             
+
+         
             <h4>Everything Else</h4>
             
             <p>Thought that was it? Like other restaurant owners, pizzerias pay for permits, insurance, garbage collection, cleaning, maintenance, and of course, taxes. It all adds up for pizzeria owners, who say customers don’t realize why they’re paying a higher price for their food. Maggie Mieles of Brooklyn’s Di Fara Pizzeria says sometimes customers complain about the $5 slice price. “But if they saw our invoices,” she says, “then they’d pay $10 a slice!”</p>
             
-            </div>
-            
-            
+            </div class="boroughInfo">
             
             <div class="borough_info" id="brooklyn_info">
             
-            <h2 class="borough">Brooklyn</h2>
-            
             <h3 class="text">What goes into the price?</h3>
+
+            <h2 class="borough">Brooklyn</h2>
             
             <h4>Ingredients</h4>
             
@@ -262,9 +276,10 @@
         </div>
         
         <script>
-          document.getElementById('pizzaForm').addEventListener('submit', 
+
+            document.getElementById('pizzaForm').addEventListener('submit', 
           
-          function calculateCost(event) {
+            function calculateCost(event) {
             event.preventDefault();
             
             var borough = document.getElementById('borough').value;
@@ -301,9 +316,6 @@
           document.getElementById('borough').addEventListener('change', function() {
           showBoroughInfo();
           });
-
-
-
         </script>
 
         
