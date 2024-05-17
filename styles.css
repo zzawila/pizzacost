@@ -3,42 +3,22 @@
 body{
     max-width: 1000px;
     margin: 0px;
-    /* background-color: rgb(224, 193, 136); */
-    /* background-color: rgb(246, 205, 129); */
-    /* background-color: rgb(185, 208, 185); */
-    /* background-color: rgb(191, 228, 191);
-    background-color: rgb(176, 201, 176); */
+    background-color: #f0f0f0;
 }
 
-.colorBackground{
-    /* background-color:rgb(224, 193, 136);
-    background-size: cover; */
-}
+/* .colorBackground{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(176, 201, 176);
+    z-index: 1000;
+} */
 
 h1{
     margin: auto;
     font-size: 50px;
     text-align: center;
     padding-top: 20px; 
-
-    /*Rock Salt font*/
-    /* font-family: "Rock Salt", cursive;
-    font-weight: 400; */
     font-style: normal;
-
-    /*Nanum Pen Script font*/
-    /* font-family: "Nanum Pen Script", cursive;
-    font-weight: 400;
-    font-style: normal */
-
-    /*salsa font*/
-    /* font-family: "Salsa", cursive;
-    font-weight: 400;
-    font-style: normal; */
-
-    /* font-family: "Playfair Display", serif;
-    font-weight:lighter; */
-
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
     font-style: normal;
@@ -50,28 +30,17 @@ h1{
     margin: auto;
     padding-top: 10px;
     color: rgb(3, 82, 3);
-    /* font-family: "Lato", cursive; */
     font-weight: 400;
     font-style: normal;
-
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
     font-style: normal;
-
-    /* font-family: "Playfair Display", serif; */
 }
 
 .lede{
     text-align: center;
     font-size: 30px;
     margin: 0;
-    /* font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal; */
-
-    /* font-family: "Playfair Display", serif;
-    font-weight: 100; */
-
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
     font-style: normal;
@@ -82,13 +51,15 @@ h2{
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+    text-align: center;
 }
 
 h3{
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
 h4{
@@ -96,9 +67,158 @@ h4{
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+    text-align: center;
 }
 
 p{
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.ingredients{
+    background-color: rgb(176, 201, 176);
+    /* border: 1px solid; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    /* box-shadow: rgba (0, 0, 0, 0.1); */
+    font-size: 15px;
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
+    margin: 40px;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.rent{
+    background-color: rgb(217, 194, 151);
+    /* border: 1px solid; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    /* box-shadow: rgba (0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
+    margin: 40px;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.payroll{
+    background-color: rgb(176, 201, 176);
+    /* border: 1px solid; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    /* box-shadow: rgba (0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
+    margin: 40px;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fees{
+    background-color: rgb(217, 194, 151);
+    /* border: 1px solid; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    /* box-shadow: rgba (0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
+    margin: 40px;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.utilities{
+    background-color: rgb(176, 201, 176);
+    /* border: 1px solid; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    /* box-shadow: rgba (0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
+    margin: 40px;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.marketing{
+    background-color: rgb(217, 194, 151);
+    /* border: 1px solid; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    /* box-shadow: rgba (0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
+    margin: 40px;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.everythingElse{
+    background-color: rgb(176, 201, 176);
+    /* border: 1px solid; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    /* box-shadow: rgba (0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Libre Caslon Text", serif;
+    font-style: normal;
+    margin: 40px;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.layout{
+    flex-direction: column;
+}
+
+.text{
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
     font-style: normal;
@@ -156,8 +276,8 @@ figcaption{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 10%;
-  padding-top: 30px;
+  max-width: 20%;
+  padding-top: 120px;
 }
 
 .intro{
@@ -169,24 +289,26 @@ figcaption{
 }
 
 .submitButton{
-    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
     background-color: rgb(3, 82, 3);
     border: 1px;
     border-radius: 3px;
     color: white;
     font-family: "Libre Caslon Text", serif;
     font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(176, 201, 176);
 }
 
 .box{
     background-color: black;
     border: 1px solid;
-    /* padding: var(--spacing-medium); */
     border-radius: 10px;
-    box-shadow: 0 4px 8px var(--box-shadow-color);
+    box-shadow: 0 4px 8px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     text-align: center;
     color: #ffffff;
     font-size: 15px;
@@ -209,7 +331,10 @@ figcaption{
 
 .result{
     font-family: "sans-serif";
-    font-size: 30px;
+    font-style: normal;
+    font-size: 10px; 
+    margin: 20px;
+    padding-top: 25px;
 }
 
 .boroughInfo{
@@ -217,14 +342,14 @@ figcaption{
 }
 
 
-@media(min-width: 355px) {
+@media(min-width: 681px) {
 
 }
 
 
 
 
-@media(min-width: 681px) {
+@media(min-width: 729px) {
 
 body {
     max-width: 800px;
@@ -267,8 +392,10 @@ h2{
 
 .intro{
     font-size: 25px; 
-    margin: 20px;
+    /* margin: 20px; */
     padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box{
@@ -277,5 +404,16 @@ h2{
     padding: 30px;
     text-align: justify;
 }
+
+/* .layout{
+    display: flex;
+    flex-direction: row;
+} */
+
+/* .colorBackground{
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(176, 201, 176);
+} */
 
 }
