@@ -65,10 +65,13 @@
           
           <button class="submitButton" type="submit">Submit</button>
         </form>
+        <div class="resultContainer">
         <img class="pizzaicon" src="pizza.svg">
-        <div class="result"></div>
-
+        <div id="result"></div>
+        </div>
     </div>
+
+    
       <!-- </div> -->
 
         <div id="result">
@@ -352,7 +355,7 @@
             resultText = "Your pizza costs the same as the city average.";
           }
           
-          document.getElementById('result').innerHTML = "<h2>" + resultText + "</h2>";
+          document.getElementById('result').innerHTML = "<h6>" + resultText + "</h6>";
         }
         );
 
