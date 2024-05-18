@@ -74,9 +74,9 @@ h6{
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
-    color:#ffffff;
+    color: rgb(148, 8, 8);
     margin: 0px;
     flex: 1;
 }
