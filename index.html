@@ -373,7 +373,8 @@
           }
         }  
 
-        document.getElementById('borough').addEventListener('change', function() {
+        document.getElementById('pizzaForm').addEventListener('submit', function(event) {
+          event.preventDefault ();
         showBoroughInfo();
         });
 
